@@ -31,4 +31,9 @@ def is_square(n):
     if math.sqrt(n) % 1 == 0:
 	    return True
     return False
+<<<<<<< HEAD
     
+=======
+
+    
+>>>>>>> 76e960f8cccef008290a094dd0b94c7b55121022
