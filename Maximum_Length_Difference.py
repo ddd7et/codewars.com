@@ -21,4 +21,4 @@ def mxdiflg(a1, a2):
     x1 = abs(max(a1_e) - min(a2_e))
     x2 = abs(min(a1_e) - max(a2_e))
     
-    return x1 if x1 > x2 else x2
+    return x1 if x1 >x2 else x2
