@@ -2,6 +2,7 @@
 
 def build_square(blocks):
 
+	print("blocks=", blocks)
 	arr = [blocks.count(1), blocks.count(2), blocks.count(3), blocks.count(4)]
 	a = arr[3]
 	arr[3] = 0
@@ -28,3 +29,7 @@ def build_square(blocks):
 		return True
 	else:
 		return False
+
+print(
+build_square([4, 4, 3, 1, 1, 1, 2])
+)
