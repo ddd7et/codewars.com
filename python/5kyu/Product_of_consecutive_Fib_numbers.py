@@ -64,4 +64,3 @@ def productFib(chislo):
             return [b,a+b,True]
         else:
             return [b,a+b,False]
-

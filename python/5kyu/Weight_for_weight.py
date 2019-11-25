@@ -13,8 +13,6 @@
 
 #All numbers in the list are positive numbers and the list can be empty.
 
-
-
 from operator import itemgetter
 def order_weight(s):
     s = s.split(" ")
