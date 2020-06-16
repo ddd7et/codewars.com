@@ -1,13 +1,16 @@
 <?php
+
 function in_asc_order($arr) {
-  #echo "arr=", $arr, "\n";
-  print_r($arr);
+
+  $pred = $arr[0];
+  foreach($arr as $item)
+  {
+    if ($pred > $item)
+      return false;
+
+    $pred = $item;
+  }
   return true;
 }
-
-$arr = [1,3,6,2];
-$arr2 = [1,4,6,2]
-#in_asc_order($arr);
-
 
 ?>
