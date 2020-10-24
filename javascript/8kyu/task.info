@@ -1,0 +1,242 @@
+1.
+https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/php
+
+Create a function (or write a script in Shell) that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+function even_or_odd(number) {
+  // ...
+}
+
+Test.assertEquals(even_or_odd(2), "Even")
+Test.assertEquals(even_or_odd(0), "Even")
+Test.assertEquals(even_or_odd(7), "Odd")
+Test.assertEquals(even_or_odd(1), "Odd")
+
+2. You get an array of numbers, return the sum of all of the positives ones.
+
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+
+function positiveSum(arr) {
+  
+}
+
+Test.assertEquals(positiveSum([1,2,3,4,5]),15);
+Test.assertEquals(positiveSum([1,-2,3,4,5]),13);
+Test.assertEquals(positiveSum([]),0);
+Test.assertEquals(positiveSum([-1,-2,-3,-4,-5]),0);
+Test.assertEquals(positiveSum([-1,2,3,4,-5]),9);
+
+3. https://www.codewars.com/kata/56dec885c54a926dcd001095/train/javascript
+
+Very simple, given a number, find its opposite.
+
+Examples:
+
+1: -1
+14: -14
+-34: 34
+
+function opposite(number) {
+  //your code here
+}
+
+
+Test.assertEquals(opposite(1), -1,)
+
+4. https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/train/javascript
+
+It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+
+function removeChar(str){
+ //You got this!
+
+};
+
+Test.describe("Tests", function(){
+
+Test.assertEquals(removeChar('eloquent'), 'loquen');
+Test.assertEquals(removeChar('country'), 'ountr');
+Test.assertEquals(removeChar('person'), 'erso');
+Test.assertEquals(removeChar('place'), 'lac');
+  
+});
+
+5. https://www.codewars.com/kata/55685cd7ad70877c23000102/javascript
+
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+Example:
+
+makeNegative(1); // return -1
+makeNegative(-5); // return -5
+makeNegative(0); // return 0
+makeNegative(0.12); // return -0.12
+
+function makeNegative(num) {
+  // Code?
+}
+
+Test.assertEquals(makeNegative(42), -42);
+
+6. https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/train/javascript
+
+Write a function called repeat_str which repeats the given string src exactly count times.
+
+repeatStr(6, "I") // "IIIIII"
+repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
+
+function repeatStr (n, s) {
+  return '';
+}
+
+describe("Tests", function() {
+  it ("Basic tests", function() {
+    Test.assertSimilar(repeatStr(3, "*"), "***");
+    Test.assertSimilar(repeatStr(5, "#"), "#####");
+    Test.assertSimilar(repeatStr(2, "ha "), "ha ha ");
+  });
+});
+
+7. https://www.codewars.com/kata/57eae20f5500ad98e50002c5/train/javascript
+
+Simple, remove the spaces from the string, then return the resultant string.
+
+function noSpace(x){
+
+}
+
+Test.describe("Example tests",_=>{
+Test.assertEquals(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'), '8j8mBliB8gimjB8B8jlB');
+Test.assertEquals(noSpace('8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd'), '88Bifk8hB8BB8BBBB888chl8BhBfd'); 
+Test.assertEquals(noSpace('8aaaaa dddd r     '), '8aaaaaddddr'); 
+});
+
+8. https://www.codewars.com/kata/55a2d7ebe362935a210000b2/train/javascript
+
+Given an array of integers your solution should find the smallest integer.
+
+For example:
+
+    Given [34, 15, 88, 2] your solution will return 2
+    Given [34, -345, -1, 100] your solution will return -345
+
+You can assume, for the purpose of this kata, that the supplied array will not be empty.
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    
+  }
+}
+
+Test.describe("Smallest Integer Tests", _ => {
+  Test.it("Fixed Tests", __ => {
+    var sif = new SmallestIntegerFinder();
+    Test.assertEquals(sif.findSmallestInt([78,56,232,12,8]),8,'Should return the smallest int 8');
+    Test.assertEquals(sif.findSmallestInt([78,56,232,12,18]),12,'Should return the smallest int 12');
+    Test.assertEquals(sif.findSmallestInt([78,56,232,412,228]),56,'Should return the smallest int 56');
+    Test.assertEquals(sif.findSmallestInt([78,56,232,12,0]),0,'Should return the smallest int 0');
+    Test.assertEquals(sif.findSmallestInt([1,56,232,12,8]),1,'Should return the smallest int 1');
+  });
+});  
+
+9. https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/javascript
+
+Summation
+
+Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+
+For example:
+
+summation(2) -> 3
+1 + 2
+
+summation(8) -> 36
+1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+
+var summation = function (num) {
+  // Code here
+}
+
+describe('summation', function () {
+  it('should return the correct total', function () {
+    Test.assertEquals(summation(1), 1)
+    Test.assertEquals(summation(8), 36)
+  })
+})
+
+10. https://www.codewars.com/kata/53369039d7ab3ac506000467/train/javascript
+
+Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+
+function boolToWord( bool ){
+  //...
+}
+
+Test.assertEquals(boolToWord(true), 'Yes')
+Test.assertEquals(boolToWord(false), 'No')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
